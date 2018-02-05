@@ -6,7 +6,7 @@ class Anagram
     @word = word
   end
 
-  def detect(matching_words)
+  def match(matching_words)
     anagram_words = []
     word_sorted = @word.split("").sort.join
     matching_words.each do |words|
